@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    text-transform: capitalize;
+    background: #eee;
+}
+button{
+    padding: 10px 35px ;
+    color: #fff;
+    background: #222;
+    border: none;
+    transition: 0.5s;
+    font-size: 18px;
+    cursor: pointer;
+}
+button:hover{
+    background: #27b161;
+    letter-spacing: 1px;
+
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.all-header h2{
+    font-size: 60px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.header{
+    padding:0 150px;
+    background: #fff;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    padding: 20px;
+}
+nav ul li a{
+    color: #222;
+    font-weight: 600;
+    transition: 0.5s;
+    font-size: 18px;
+}
+nav ul li a:hover{
+    color: #27b161;
+}
+span{
+    color: #27b161;
+}
+
+.hero{
+    height: 90vh;
+    padding:0 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .hero-item img{
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 10px solid #27b161;
+}
+.hero .hero-item h3{
+    font-size: 38px;
+    color: #222;
+    margin: 10px 0;
+
+}
+
+.hero .hero-item p{
+    margin: 8px 0;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+
+.about{
+    padding:0 150px;
+}
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-content .about-item-fast{
+    width: 30%;
+}
+.about-content .about-item-fast img{
+    width: 100%;
+    border: 10px solid #fff;
+    box-shadow: 0px 0px 10px rgb(128, 128, 128);
+}
+.about-content .about-item-secend{
+    width: 60%;
+}
+.about-content .about-item-secend h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.about-content .about-item-secend p{
+    color: #222;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.about-content .about-item-secend .about-item-side{
+    display: flex;
+    justify-content: space-between;
+}
+.about-content .about-item-secend .about-item-side ul li{
+    line-height: 40px;
+}
+.about-content .about-item-secend .about-item-side ul {
+    margin-bottom: 50px;
+}
+
+.serveces{
+    padding: 50px 150px;
+}
+.serveces-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.serveces-item {
+    flex-basis: 32%;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px #ddd;
+}
+.serveces-item i{
+    font-size: 50px;
+    margin: 15px 0;
+    color: #27b161;
+}
+.serveces-item h2{
+    font-size: 26px;
+    color: #222;
+    margin: 10px 0;
+
+}
+.serveces-item p{
+    color: #222;
+    line-height: 30px;
+}
+
+.protfolio{
+    padding: 50px 150px;
+}
+.protfolio-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.protfolio-container .protfolio-item{
+    width: 32%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+.protfolio-container .protfolio-item:hover .protfolio-overlay{
+    left: 0;
+}
+.protfolio-container .protfolio-item img{
+    width: 100%;
+    height: 250px;
+}
+.protfolio-container .protfolio-item .protfolio-overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.623);
+    transition: 0.3s;
+}
+
+
+.blog-container{
+    padding: 50px 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.blog-item{
+    width: 32%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+.blog-item img{
+    width: 100%;
+}
+.blog-item p{
+    margin: 15px 0;
+    color: #222;
+}
+
+.contact{
+    padding: 50px 150px;
+
+}
+.contact-container{
+    display: grid;
+    grid-template-columns: 49% 49%;
+}
+.contact-item{
+    
+}
+.contact-item input ,.contact-item textarea{
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    color: rgb(150, 150, 150);
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 3px;
+    font-size: 16px;
+}
+.contact-item form{
+    padding:50px;
+    background: #fff;
+    border-radius: 5px;
+}
